@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("siva.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+  margin-right: 10px;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar nav a.active {
+  color: #ffcc00;
+}
+
+/* Content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+/* Glass Effect */
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  color: black;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, button,select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.hamburger {
+  width: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.hamburger span {
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+h2 {
+  colour:white;
+}
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  color: green;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}

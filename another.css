@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("siva.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0,0,0,0.85);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  flex: 1;
+  text-align: center;
+  margin-top: 40px;
+}
+.container h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+.container h3 {
+  display:flex;
+  flex-direction:column;
+}
+/* Glass Cards */
+.cards {
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  padding: 20px 30px;
+  border-radius: 40px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.35);
+}
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.card p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.85);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 10px;
+  color: white;
+}
+.navbar a{
+  height:60px
+  align-items: center;
+  font-size: 14px;
+}
+p{
+  color: aliceblue;
+  height:60px
+  align-items: center;
+  font-size:20px;
+}

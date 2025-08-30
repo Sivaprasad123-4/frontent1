@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Food</title>
+  <link rel="stylesheet" href="request1.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="fb.jpg" alt="Logo" class="logo">
+    <h1 class="brand">FoodBank</h1>
+  <nav>
+      <a href="login.html">🏠︎Home</a>
+      <a href="donate1.html" class="active">🤝Donated list</a>
+      <a href="notification.html">🤌🏻requested list</a>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Counter -->
+    <div class="card counter">
+      <h2>Total Donations: <span id="donationCount">0</span></h2>
+    </div>
+
+    <!-- Donation Form -->
+    <div class="card">
+      <h2>Donate Food</h2>
+      <form id="donateForm">
+        <label>Food Type</label><br/>
+       <select>
+          <option> Veg</option>
+          <option>Non Veg</option>
+        </select><br/>
+
+        <label>Quantity</label>
+        <input type="text" id="quantity" required>
+
+        <label>Expiry Date</label>
+        <input type="date" id="expiryDate" required>
+
+        <label>Pickup Location</label>
+        <input type="text" id="pickup" required>
+
+        <button type="submit">Submit Donation</button>
+      </form>
+    </div>
+
+    <!-- Donation List -->
+    <div class="card">
+      <h2>Donated List</h2>
+      <ul id="donationList"></ul>
+    </div>
+  </div>
+
+  <script src="donate1.js"></script>
+</body>
+</html>

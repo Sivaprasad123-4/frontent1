@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url("siva.jpg") no-repeat center center/cover;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: none;
+}
+
+/* Main Container */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Glass Card */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 400px;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Password Inputs */
+.password-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.password-box input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* padding for eye button */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+}
+
+/* Forgot password */
+.forgot-link {
+  display: block;
+  margin: 10px 0 20px;
+  text-align: right;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Save button */
+.save-btn {
+  width: 100%;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: darkgreen;
+}
+
+/* Error */
+.error {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.85);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+

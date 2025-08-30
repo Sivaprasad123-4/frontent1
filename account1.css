@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-image: url("siva.jpg");  /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+/* Header with solid background (no image) */
+header {
+  background: rgba(0, 0, 0, 0.8); /* dark solid bar */
+  color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Main container */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Card style (Glass Effect only for profile, donations, requests) */
+.card {
+  background: rgba(255, 255, 255, 0.15); /* transparent glass */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #000; /* keep text black for visibility */
+}
+
+/* Inputs */
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+form button {
+  background: rgba(0, 128, 0, 0.85);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: rgba(0, 100, 0, 0.9);
+}
+
+/* OTP message */
+#otpMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#otpMessage.success {
+  color: green;
+}
+
+#otpMessage.error {
+  color: red;
+}
+
+/* Footer with solid background */
+footer {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+

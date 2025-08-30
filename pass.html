@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Management - Food Bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="pass.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-nav">
+      <img src="fb.jpg" alt="FoodBank Logo" class="logo">
+      <h2>FoodBank</h2>
+    </div>
+    <nav>
+       <a href="login.html">🏠︎Home</a>
+      <a href="donate1.html" class="active">🤝Donated list</a>
+      <a href="request1.html">🤌🏻Requested list</a>
+      <a href="account1.html">Account</a>
+    </nav>
+  </header>
+
+  <!-- Main Glass Card -->
+  <main class="container">
+    <section class="card">
+      <h2>Password Management</h2>
+      <form id="passwordForm">
+        <label for="currentPassword">Current Password:</label>
+        <div class="password-box">
+          <input type="password" id="currentPassword" required>
+          <button type="button" class="eye-btn" onclick="togglePassword('currentPassword', this)">👁</button>
+        </div>
+
+        <label for="newPassword">New Password:</label>
+        <div class="password-box">
+          <input type="password" id="newPassword" required>
+          <button type="button" class="eye-btn" onclick="togglePassword('newPassword', this)">👁</button>
+        </div>
+
+        <label for="rePassword">Re-enter Password:</label>
+        <div class="password-box">
+          <input type="password" id="rePassword" required>
+          <button type="button" class="eye-btn" onclick="togglePassword('rePassword', this)">👁</button>
+        </div>
+
+        <a href="forgot.html" class="forgot-link">Forgot Password?</a>
+
+        <button type="submit" class="save-btn">Save Password</button>
+      </form>
+      <p id="errorMsg" class="error"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Food Bank | Designed with ❤</p>
+  </footer>
+
+  <script src="pass.js"></script>
+</body>
+</html>
